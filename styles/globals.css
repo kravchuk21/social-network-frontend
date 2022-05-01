@@ -1,16 +1,41 @@
+:root {
+    --black: #000;
+    --blackgrey: #2F313D;
+    --white: #E0EAFF;
+    --blue: #539FFC;
+    --red: tomato;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: var(--black);
+    color: var(--white);
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+input {
+    color: inherit;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    outline-color: var(--blue);
+}
+
+.container {
+    padding: 0 1rem;
+}
+
+.main {
+    min-height: 100vh;
+    padding: 4rem 0;
+    flex: 1;
 }
